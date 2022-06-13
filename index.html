@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700&family=Encode+Sans:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700&family=Encode+Sans:wght@200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">    
+    <title>DrivenEats</title>
+</head>
+<body>
+    <div class="topo">
+        <p><titulo>DrivenEats</titulo></p>
+        <p><subtitulo>Sua comida em 6 minutos</subtitulo></p>
+    </div>
+
+    <div class="primeiro">
+        <p><titulo-opcao> Primeiro, seu prato</titulo-opcao></p>
+        <div class="escolhas comidas">
+            <div class="opcao caixa comida1" onclick="selecionarcomida(this)">
+                <img src="Imagens/frango frito.png" > 
+                <p><nome class="nomePrato">Frango Frito</nome></p>
+                <p><descricao>Sobrecoxa e coxa, temperadas com tempero especial - 800 gramas</descricao></p>
+                <div class = preço-icone><p><preco class="preçoPrato">R$ 44,90</preco></p>
+                <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="opcao caixa comida2" onclick="selecionarcomida(this)">
+                <img src="Imagens/hamburguer.png">
+                <p><nome class="nomePrato">Hamburguer</nome></p>
+                <p><descricao>220 gramas de carne, acompanha cream cheese, peito de peru</descricao></p>
+                <div class = preço-icone><p><preco class="preçoPrato">R$ 39,90</preco></p>
+                    <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+            <div class="opcao caixa comida3" onclick="selecionarcomida(this)">
+                <img src="Imagens/salada.png">
+                <p><nome class="nomePrato">Salada organica</nome></p>
+                <p><descricao>Mix de folhas e vegetais organicos da estação - 700 gramas</descricao></p>
+                <div class = preço-icone><p><preco class="preçoPrato">R$ 29,90</preco></p>
+                 <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                   </div>
+            </div>
+        </div>
+
+        <p><titulo-opcao> Agora, sua bebida</titulo-opcao></p>
+        <div class="escolhas bebidas">
+            <div  class="opcao caixa bebida1" onclick="selecionarbebida(this)">
+                <img src="Imagens/Coca Cola Can.png">
+                <p><nome class="nomeBebida">Coca Cola</nome></p>
+                <p><descricao>Lata 350ml - com açúcar</descricao></p>
+                <div class = preço-icone><p><preco class="preçoBebida" >R$ 6,90</preco></p>
+                    <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="opcao caixa bebida2" onclick="selecionarbebida(this)">
+                <img src="Imagens/suco laranja.png" >
+                <p><nome class="nomeBebida">Suco de Laranja</nome></p>
+                <p><descricao>400ml - natural - com adoçante </descricao></p>
+                <div class = preço-icone><p><preco class="preçoBebida">R$ 8,90</preco></p>
+                    <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="opcao caixa bebida3" onclick="selecionarbebida(this)">
+                <img src="Imagens/agua.png">
+                <p><nome class="nomeBebida">Agua</nome></p>
+                <p><descricao>Garrafa 500ml - sem gás</descricao></p>
+                <div class = preço-icone><p><preco class="preçoBebida">R$ 4,90</preco></p>
+                    <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <p><titulo-opcao> Por fim, sua sobremesa</titulo-opcao></p>
+        <div class="escolhas sobremesas">
+            <div class="opcao caixa sobremesa1" onclick="selecionarsobremesa(this)">
+                <img src="Imagens/pudim.png">
+                <p><nome class="nomeSobremesa">Pudim</nome></p>
+                <p><descricao>Pudim de creme e chocolate - 200 gramas</descricao></p>
+                <div class = preço-icone><p><preco class="preçoSobremesa">R$ 7,90</preco></p>
+                    <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="opcao caixa " onclick="selecionarsobremesa(this)">
+                <img src="Imagens/saladade frutas.png">
+                <p><nome class="nomeSobremesa">Salada de frutas</nome></p>
+                <p><descricao>Banana, Kiwi, Maça e mamão - 250 gramas</descricao></p>
+                <div class = preço-icone><p><preco class="preçoSobremesa">R$ 7,90</preco></p>
+                    <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+            <div class="opcao caixa" onclick="selecionarsobremesa(this)">
+                <img src="Imagens/brownie.png">
+                <p><nome class="nomeSobremesa">Brownie</nome></p>
+                <p><descricao>Sabor chocolate amargo 70% - 200 gramas</descricao></p>
+                <div class = preço-icone><p><preco class="preçoSobremesa">R$ 7,90</preco></p>
+                    <ion-icon class="check check_off" name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+            </div>
+            
+        </div>
+
+ 
+        <div class="selecionar-pedido">
+                <div class="botao" onclick=mensagem()>Selecione os 3 itens para fechar o pedido</div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
